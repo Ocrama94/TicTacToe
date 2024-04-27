@@ -1,0 +1,38 @@
+:root{
+    --unit: 10rem;
+}
+
+*{
+    text-transform: uppercase;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+
+
+.row{
+    height: var(--unit);
+    width: calc(var(--unit) * 3);
+    
+    
+}
+
+.col-4{
+    font-size: 6rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ 
+}
+
+@media screen and (max-width: 575px){
+    :root{
+        font-size: 8px;
+    }
+}
