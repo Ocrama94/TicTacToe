@@ -51,6 +51,25 @@ cells.forEach((value) =>{
 
         
     })
+    value.addEventListener("click", function(){
+    
+        if(checkSelection(this) && turno === "user"){
+            this.innerHTML = "X";
+            this.classList.add("checked")
+            this.classList.add("user")
+            turno = "bot";
+            
+        }
+        checkWin();
+
+        if(turno ==="bot"){
+            botSelection();
+        }
+        checkWin();
+
+
+        
+    })
 
 });
 
