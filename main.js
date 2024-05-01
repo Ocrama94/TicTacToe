@@ -44,32 +44,15 @@ cells.forEach((value) =>{
         checkWin();
 
         if(turno ==="bot"){
-            botSelection();
+            setTimeout(botSelection,200);
         }
         checkWin();
 
 
         
     })
-    value.addEventListener("click", function(){
-    
-        if(checkSelection(this) && turno === "user"){
-            this.innerHTML = "X";
-            this.classList.add("checked")
-            this.classList.add("user")
-            turno = "bot";
-            
-        }
-        checkWin();
 
-        if(turno ==="bot"){
-            botSelection();
-        }
-        checkWin();
-
-
-        
-    })
+   
 
 });
 
